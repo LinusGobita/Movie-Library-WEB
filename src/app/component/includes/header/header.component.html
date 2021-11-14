@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" [routerLink]="['/']">Th3 LDC Movies</a>
+
+  <ul class="navbar-nav ml-auto listMenu">
+    <li class="nav-item active">
+      <a class="nav-link" [routerLink]="['/home']" routerLinkActive="router-link-active">Home
+        <span class="sr-only">(current)</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/movies']" routerLinkActive="router-link-active">Movies</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/popular']" routerLinkActive="router-link-active">Popular</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/genres']" routerLinkActive="router-link-active">Genres</a>
+    </li>
+    <li class="nav-item">
+      <input type="text" placeholder="Search.." id="search" class="search-bar">
+    </li>
+  </ul>
+
+</nav>
+
+
+
