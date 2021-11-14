@@ -1,6 +1,7 @@
-
+<div class="container-fluid mt-20 mb-20">
 <h1>Genres</h1>
-
+<div class="row">
 <button class="button" *ngFor="let genre of genres">{{genre.name}}</button>
 
 <app-movies [movies]="movies"></app-movies>
+</div>

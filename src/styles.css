@@ -1,5 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
   --primary-color: #000000;
-  --secondary-color: #8B0000;
+  --secondary-color: #d93a3a;
+}
+main{
+  background-color: black;
+}
+body {
+  background-color: var(--primary-color);
 }
