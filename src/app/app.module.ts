@@ -10,6 +10,7 @@ import { MoviesComponent } from './component/movies/movies.component';
 import { PopularComponent } from './component/popular/popular.component';
 import {HttpClientModule} from "@angular/common/http";
 import { GenreComponent } from './component/genre/genre.component';
+import { SliderComponent } from './component/slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { GenreComponent } from './component/genre/genre.component';
     MoviesComponent,
     PopularComponent,
     GenreComponent,
+    SliderComponent,
   ],
   imports: [
     BrowserModule,
