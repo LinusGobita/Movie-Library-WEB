@@ -20,7 +20,7 @@ export class PopularComponent implements OnInit {
   }
 
   getMovies() {
-    fetch(this.movieServices.getPopular()).then(res => res.json()).then(data =>{
+    fetch(this.movieServices.getPopularUrl()).then(res => res.json()).then(data =>{
       this.movies = data.results;
       console.log("popular =" + data.results)
     })

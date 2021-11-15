@@ -12,7 +12,7 @@ export class MoviesComponent implements OnInit {
 
   //undefined entfernen
   imgUrl: string="";
-  @Input() movies: Array<Movie> | undefined;
+  @Input() movies: Array<Movie> =[];
 
 
   constructor(

@@ -20,17 +20,18 @@ export class GenreComponent implements OnInit {
 
   ngOnInit(): void {
     this.getGenre()
+    this.searchGenre()
   }
 
   getGenre() {
-    fetch(this.movieServices.getGenres()).then(res => res.json()).then(data => {
+    fetch(this.movieServices.getGenresUrl()).then(res => res.json()).then(data => {
       this.genres = data.genres;
       console.log("genres =" + data.genres)
     })
   }
 
   searchGenre() {
-    fetch(this.movieServices.getSearchGenres()).then(res => res.json()).then(data => {
+    fetch(this.movieServices.getSearchGenresUrl()).then(res => res.json()).then(data => {
       this.movies = data.results;
       console.log("searchGenre =" + data.results)
     })

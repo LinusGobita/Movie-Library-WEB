@@ -21,7 +21,7 @@ export class CinemaComponent implements OnInit {
   }
 
   getMovies() {
-    fetch(this.movieServices.getCinema()).then(res => res.json()).then(data =>{
+    fetch(this.movieServices.getCinemaUrl()).then(res => res.json()).then(data =>{
       this.movies = data.results;
     })
 

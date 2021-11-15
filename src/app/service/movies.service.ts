@@ -43,23 +43,23 @@ export class MoviesService {
   }
 
   //Datum Noch anpassen und CH hinzufügen
-  getCinema():string {
+  getCinemaUrl():string {
     //console.log("cinema works!")
     return this.baseUrl + "/discover/movie?primary_release_date.gte=2021-08-15&primary_release_date.lte=2021-11-22&" + this.apiKey;
   }
-  getPopular():string {
+  getPopularUrl():string {
     //console.log("popular works! link = " +  this.baseUrl + "/discover/movie/?certification_country=US&certification=R&sort_by=vote_average.desc&" + this.apiKey)
     return this.baseUrl + "/discover/movie/?certification_country=US&certification=R&sort_by=vote_average.desc&" + this.apiKey;
   }
-  getGenres():string {
+  getGenresUrl():string {
     //console.log("genre works! link = " + this.baseUrl + "genre/movie/list?" + this.apiKey)
-    //return this.baseUrl + "/genre/movie/list?" + this.apiKey;
+    //https://api.themoviedb.org/3/genre/movie/list?api_key=b1ab1203863d0124d4bc7d33d3c3311b
     return "https://api.themoviedb.org/3/genre/movie/list?api_key=b1ab1203863d0124d4bc7d33d3c3311b"
   }
 
   //Noch der Richtige Link eintragen mit Variable Genre.id
-  getSearchGenres():string{
-    return "https://api.themoviedb.org/3/genre/movie/list?api_key=b1ab1203863d0124d4bc7d33d3c3311b"
+  getSearchGenresUrl():string{
+    return "https://api.themoviedb.org/3/genre/99/movies?api_key=dd4d819639705d332d531217b4f7c6b6"
   }
 
 
