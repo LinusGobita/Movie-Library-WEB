@@ -3,7 +3,7 @@
 
     <div class="movie" *ngFor="let movie of movies">
 
-      <div style="margin: 8px">
+      <div style="margin: 8px; border-radius: 10px;">
         <img [src]="imgUrl + movie.poster_path" alt="" class="movie-img">
         <div>
           <h5 class="movie-info">{{movie.title}}</h5>
