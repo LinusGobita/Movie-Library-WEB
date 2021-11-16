@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+
+html {
+  height: 100%;
+}
 :root {
   --primary-color: #000000;
   --secondary-color: #d93a3a;
@@ -8,4 +12,5 @@ main{
 }
 body {
   background-color: var(--primary-color);
+  min-height: 100%
 }

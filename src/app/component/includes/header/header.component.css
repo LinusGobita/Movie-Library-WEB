@@ -9,3 +9,21 @@
 .navbar-brand {
   color: var(--primary-color);
 }
+
+.search-bar {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: inherit;
+}
+.search-bar:focus{
+  outline: 0;
+  background-color: var(--primary-color);
+
+}
+.search-bar::placeholder{
+  color: black;
+}

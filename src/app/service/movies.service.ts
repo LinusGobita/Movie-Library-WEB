@@ -53,7 +53,7 @@ export class MoviesService {
   }
   getGenresUrl():string {
     //console.log("genre works! link = " + this.baseUrl + "genre/movie/list?" + this.apiKey)
-    //https://api.themoviedb.org/3/genre/movie/list?api_key=b1ab1203863d0124d4bc7d33d3c3311b
+    //https://api.themoviedb.org/13/genre/movie/list?api_key=b1ab1203863d0124d4bc7d33d3c3311b
     return "https://api.themoviedb.org/3/genre/movie/list?api_key=b1ab1203863d0124d4bc7d33d3c3311b"
   }
 
