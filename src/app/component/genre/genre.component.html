@@ -1,6 +1,6 @@
 
-<h1>Genres</h1>
+<h1>Genres: {{genreString}}</h1>
 
-<button class="button" *ngFor="let genre of genres">{{genre.name}}</button>
+<button type="button" class="btn btn-danger button" *ngFor="let genre of genres" (click)="selectGenre(genre.id, genre.name)">{{genre.name}}</button>
 
 <app-movies [movies]="movies"></app-movies>

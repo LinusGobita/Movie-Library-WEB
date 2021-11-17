@@ -12,6 +12,9 @@ export class GenreComponent implements OnInit {
 
   genres: Array<Genre> = [];
   movies: Array<Movie> = [];
+  // Sollte auch dynamisch sein: also 1ste position aus json
+  genreId: number = 28;
+  genreString: string= "Action";
 
   constructor(
     private movieServices: MoviesService,
@@ -23,6 +26,12 @@ export class GenreComponent implements OnInit {
     this.searchGenre()
   }
 
+
+  selectGenre(id: number, name: string){
+    this.genreId = id;
+    this.genreString = name
+    this.searchGenre();
+  }
   getGenre() {
     fetch(this.movieServices.getGenresUrl()).then(res => res.json()).then(data => {
       this.genres = data.genres;
@@ -31,7 +40,7 @@ export class GenreComponent implements OnInit {
   }
 
   searchGenre() {
-    fetch(this.movieServices.getSearchGenresUrl()).then(res => res.json()).then(data => {
+    fetch(this.movieServices.getSearchGenresUrl(this.genreId)).then(res => res.json()).then(data => {
       this.movies = data.results;
       console.log("searchGenre =" + data.results)
     })
