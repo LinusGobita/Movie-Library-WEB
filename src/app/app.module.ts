@@ -11,6 +11,8 @@ import { PopularComponent } from './component/popular/popular.component';
 import {HttpClientModule} from "@angular/common/http";
 import { GenreComponent } from './component/genre/genre.component';
 import { SliderComponent } from './component/slider/slider.component';
+import { SearchComponent } from './component/search/search.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -22,13 +24,15 @@ import { SliderComponent } from './component/slider/slider.component';
     PopularComponent,
     GenreComponent,
     SliderComponent,
+    SearchComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule,
-    HttpClientModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        NgbModule,
+        HttpClientModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

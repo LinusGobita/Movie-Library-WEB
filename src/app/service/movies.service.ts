@@ -51,7 +51,7 @@ export class MoviesService {
     //console.log("popular works! link = " +  this.baseUrl + "/discover/movie/?certification_country=US&certification=R&sort_by=vote_average.desc&" + this.apiKey)
     return `${this.baseUrl}/discover/movie/?certification_country=US&certification=R&sort_by=vote_average.desc&${this.apiKey}`;
   }
-  getGenresUrl():string {
+  getAllGenresUrl():string {
     console.log("genre works! link = " + this.baseUrl + "genre/movie/list?" + this.apiKey)
     return `${this.baseUrl}/genre/movie/list?${this.apiKey}`
   }
@@ -61,7 +61,10 @@ export class MoviesService {
     return `${this.baseUrl}/genre/${id}/movies?${this.apiKey}`
   }
 
-
+  getSearchUrl(search: string):string{
+    console.log(`search works! = ${this.baseUrl}/search/movie?${this.apiKey}&query=${search}`)
+    return `${this.baseUrl}/search/movie?${this.apiKey}&query=${search}`
+  }
   /*
   getNowPlaying(page: number): Observable<any> {
     // tslint:disable-next-line: max-line-length

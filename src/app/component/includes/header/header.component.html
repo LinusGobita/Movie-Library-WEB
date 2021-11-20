@@ -3,7 +3,7 @@
 
   <ul class="navbar-nav ml-auto listMenu">
     <li class="nav-item active">
-      <a class="nav-link" [routerLink]="['/home']" routerLinkActive="router-link-active">Home
+      <a class="nav-link" [routerLink]="['/home']" routerLinkActive="router-link-active">Swiss Cinema Movies
         <span class="sr-only">(current)</span>
       </a>
     </li>
@@ -14,7 +14,8 @@
       <a class="nav-link" [routerLink]="['/genres']" routerLinkActive="router-link-active">Genres</a>
     </li>
     <li class="nav-item">
-      <input type="text" placeholder="Search.." id="search" class="search-bar">
+      <input type="text" placeholder="Search.." id="search" [(ngModel)]="searchValue" class="search-bar">
+      <button (click)="setSearchValue()">search</button>
     </li>
   </ul>
 <!-- <span class="sidebar-nav-btn"  pButton icon="pi pi-plus" label="Show" (click)="leftSidebar = true"><img src="assets/images/menu.svg"></span>-->

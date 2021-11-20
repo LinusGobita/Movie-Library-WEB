@@ -22,7 +22,7 @@ export class GenreComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getGenre()
+    this.getAllGenre()
     this.searchGenre()
   }
 
@@ -32,17 +32,17 @@ export class GenreComponent implements OnInit {
     this.genreString = name
     this.searchGenre();
   }
-  getGenre() {
-    fetch(this.movieServices.getGenresUrl()).then(res => res.json()).then(data => {
+  getAllGenre() {
+    fetch(this.movieServices.getAllGenresUrl()).then(res => res.json()).then(data => {
       this.genres = data.genres;
-      console.log("genres =" + data.genres)
+      //console.log("genres =" + data.genres)
     })
   }
 
   searchGenre() {
     fetch(this.movieServices.getSearchGenresUrl(this.genreId)).then(res => res.json()).then(data => {
       this.movies = data.results;
-      console.log("searchGenre =" + data.results)
+      //console.log("searchGenre =" + data.results)
     })
   }
 }
