@@ -32,7 +32,10 @@ export class MoviesService {
     this.language = "en-Us";
     this.region = "CH";
   }
-
+// https://api.themoviedb.org/3/find/%7Bexternal_id%7D?api_key=%3C%3Capi_key%3E%3E&language=en-US&external_source=imdb_id
+// https://api.themoviedb.org/3/find/{512195}?api_key=b1ab1203863d0124d4bc7d33d3c3311b
+// https://api.themoviedb.org/3/find/{external_id}?api_key=<<api_key>>&language=en-US&external_source=imdb_id
+// https://api.themoviedb.org/3/find/{522402}?api_key=b1ab1203863d0124d4bc7d33d3c3311b&language=en-US&external_source=imdb_id
 
   // Im Service heissen alle Funktionen get!
   // https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=b1ab1203863d0124d4bc7d33d3c3311b
@@ -48,7 +51,7 @@ export class MoviesService {
     return `${this.baseUrl}/discover/movie?primary_release_date.gte=2021-08-15&primary_release_date.lte=2021-11-22&${this.apiKey}`;
   }
   getPopularUrl():string {
-    //console.log("popular works! link = " +  this.baseUrl + "/discover/movie/?certification_country=US&certification=R&sort_by=vote_average.desc&" + this.apiKey)
+    console.log("popular works! link = " +  this.baseUrl + "/discover/movie/?certification_country=US&certification=R&sort_by=vote_average.desc&" + this.apiKey)
     return `${this.baseUrl}/discover/movie/?certification_country=US&certification=R&sort_by=vote_average.desc&${this.apiKey}`;
   }
   getAllGenresUrl():string {

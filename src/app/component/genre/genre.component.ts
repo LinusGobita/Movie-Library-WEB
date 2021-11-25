@@ -17,7 +17,7 @@ export class GenreComponent implements OnInit {
   genreString: string= "Action";
 
   constructor(
-    private movieServices: MoviesService,
+    private movieServices: MoviesService
   ) {
   }
 

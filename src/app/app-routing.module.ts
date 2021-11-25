@@ -5,6 +5,7 @@ import {PopularComponent} from "./component/popular/popular.component";
 import {GenreComponent} from "./component/genre/genre.component";
 import {SearchComponent} from "./component/search/search.component";
 import {NotFoundComponent} from "./component/not-found/not-found/not-found.component";
+import {FavouriteComponent} from "./component/favourite/favourite.component";
 
 const routes: Routes = [
   {
@@ -23,6 +24,10 @@ const routes: Routes = [
 {
     path: 'genres',
     component: GenreComponent
+  },
+  {
+    path: 'favourite',
+    component: FavouriteComponent
   },
 {
     path: 'search',

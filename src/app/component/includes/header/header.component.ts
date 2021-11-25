@@ -21,7 +21,8 @@ export class HeaderComponent implements OnInit {
   }
 
   setSearchValue() {
-//    this.router.navigate(['search']),
-    this.search.getMovies(this.searchValue)
+    this.router.navigate(['search']),
+    console.log(this.searchValue)
+    this.search.getMovies(this.searchValue);
   }
 }

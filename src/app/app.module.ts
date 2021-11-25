@@ -13,6 +13,7 @@ import { GenreComponent } from './component/genre/genre.component';
 import { SliderComponent } from './component/slider/slider.component';
 import { SearchComponent } from './component/search/search.component';
 import {FormsModule} from "@angular/forms";
+import { FavouriteComponent } from './component/favourite/favourite.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import {FormsModule} from "@angular/forms";
     GenreComponent,
     SliderComponent,
     SearchComponent,
+    FavouriteComponent,
   ],
     imports: [
         BrowserModule,
