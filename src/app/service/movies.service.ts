@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import {Movie} from "../model/Movie";
 
 
 @Injectable({
@@ -10,19 +11,46 @@ export class MoviesService {
    * Und an Movies weitergegenen.
    *
    */
+  movies: Array<Movie>=[];
+  choosedSide: string ="";
+  // Constants
   baseUrl: string = "https://api.themoviedb.org/3";
   apiKey: string = "api_key=b1ab1203863d0124d4bc7d33d3c3311b";
   imgUrl: string = "https://image.tmdb.org/t/p/w500";
   language: string;
   region: string;
 
-  /*
-  baseUrl: string;
-  apiKey: string;
-  imgUrl: string;
-  language: string;
-  region: string;
-  */
+
+  //URLs wird noch nicht gebraucht?
+  cinemaURL: string    = `${this.baseUrl}/discover/movie?primary_release_date.gte=2021-08-15&primary_release_date.lte=2021-11-22&${this.apiKey}`;
+  popularURL: string   = `${this.baseUrl}/discover/movie/?certification_country=CH&certification=R&sort_by=vote_average.desc&${this.apiKey}`;
+  allGenresURL: string = `${this.baseUrl}/genre/movie/list?${this.apiKey}`;
+  //searchGenreURL) string = `${this.baseUrl}/genre/${id}/movies?${this.apiKey}`;
+  //searchMovieURL: string = `${this.baseUrl}/search/movie?${this.apiKey}&query=${search}`
+
+/*
+//Ich weiss noch nicht wie ich umsetzen kann, dass die URLs nur als string gepeichert werden
+  getMoviesFromURL(homepage: string){
+    if(homepage = "cinema")
+    {
+      //this.choosedSide =
+    }
+    else if (homepage = "genre")
+    {
+
+    }
+    else if (homepage = "popular")
+    {
+
+    }
+    fetch(homepage).then(res => res.json()).then(data =>{
+      console.log(homepage)
+      this.movies = data.results;
+      console.log("funktioniert homepage?"+this.movies)
+      return this.movies
+    })
+  }
+ */
 
   // bin mir nicht sicher, ib es dies braucht
   constructor() {
@@ -32,14 +60,6 @@ export class MoviesService {
     this.language = "en-Us";
     this.region = "CH";
   }
-// https://api.themoviedb.org/3/find/%7Bexternal_id%7D?api_key=%3C%3Capi_key%3E%3E&language=en-US&external_source=imdb_id
-// https://api.themoviedb.org/3/find/{512195}?api_key=b1ab1203863d0124d4bc7d33d3c3311b
-// https://api.themoviedb.org/3/find/{external_id}?api_key=<<api_key>>&language=en-US&external_source=imdb_id
-// https://api.themoviedb.org/3/find/{522402}?api_key=b1ab1203863d0124d4bc7d33d3c3311b&language=en-US&external_source=imdb_id
-
-  // Im Service heissen alle Funktionen get!
-  // https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=b1ab1203863d0124d4bc7d33d3c3311b
-  // API Beispiele: https://www.themoviedb.org/documentation/api/discover
 
   getImgUrl():string {
     return this.imgUrl
@@ -68,19 +88,4 @@ export class MoviesService {
     console.log(`search works! = ${this.baseUrl}/search/movie?${this.apiKey}&query=${search}`)
     return `${this.baseUrl}/search/movie?${this.apiKey}&query=${search}`
   }
-  /*
-  getNowPlaying(page: number): Observable<any> {
-    // tslint:disable-next-line: max-line-length
-    return this.http.get(`${this.baseUrl}movie/now_playing?api_key=${this.apiKey}&page=${page}&language=${this.language}&region=${this.region}`);
-  }
-  searchMovies(searchStr: string): Observable<any> {
-    return this.http.get(`${this.baseUrl}search/movie?api_key=${this.apiKey}&query=${searchStr}`);
-  }
-
-  getTopRatedMovies(page: number): Observable<any> {
-    // tslint:disable-next-line: max-line-length
-    return this.http.get(`${this.baseUrl}movie/top_rated?api_key=${this.apiKey}&page=${page}&language=${this.language}&region=${this.region}`);
-  }
-*/
-
 }

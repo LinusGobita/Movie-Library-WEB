@@ -24,6 +24,5 @@ export class PopularComponent implements OnInit {
       this.movies = data.results;
       console.log("popular =" + data.results)
     })
-
   }
 }

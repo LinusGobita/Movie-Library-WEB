@@ -1,5 +1,5 @@
 
-<h1>Genres: {{genreString}}</h1>
+<h1>Genres: {{genreName}}</h1>
 
 <button type="button" class="btn btn-danger button" *ngFor="let genre of genres" (click)="selectGenre(genre.id, genre.name)">{{genre.name}}</button>
 

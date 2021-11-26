@@ -26,11 +26,19 @@ const routes: Routes = [
     component: GenreComponent
   },
   {
+    path: 'genres/:genreId',
+    component: GenreComponent
+  },
+  {
     path: 'favourite',
     component: FavouriteComponent
   },
 {
     path: 'search',
+    component: SearchComponent
+  },
+  {
+    path: 'search/:searchValue',
     component: SearchComponent
   },
 {

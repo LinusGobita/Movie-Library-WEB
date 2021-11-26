@@ -1,44 +1,32 @@
 import {Component, OnInit} from '@angular/core';
 import {Movie} from "../../model/Movie";
 import {MoviesService} from "../../service/movies.service";
-import {Router} from "@angular/router";
-import {HeaderComponent} from "../includes/header/header.component";
+import {ActivatedRoute, Router} from "@angular/router";
+
 
 @Component({
-  selector: 'app-search', //app-header
+  selector: 'app-search',
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit {
 
   movies: Array<Movie> = [];
-  //Nur zu Test
-  searchValue: any;
+  searchValue: string ="";
 
   constructor(
     private movieServices: MoviesService,
-    private router: Router,
-    //private header: HeaderComponent
+    private route: ActivatedRoute,
   ) {
+    this.route.params.subscribe(params => this.doSearch(params["searchValue"]))
   }
 
   ngOnInit(): void {
-    this.getMovies(this.searchValue)
   }
 
-  getMovies(searchValue: string) {
-    this.router.navigate(['search'])
-/*
-    fetch(this.movieServices.getSearchUrl(this.header.searchValue)).then(res => res.json()).then(data => {
-      this.movies = data.results;
-      console.log("movie search =" + this.movies)
-    })
- */
-  }
 
-  setSearchValue() {
-    this.router.navigate(['search'])
-    fetch(this.movieServices.getSearchUrl(this.searchValue)).then(res => res.json()).then(data => {
+  doSearch(searchValue: string) {
+    fetch(this.movieServices.getSearchUrl(searchValue)).then(res => res.json()).then(data => {
       this.movies = data.results;
     })
   }

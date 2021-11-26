@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {SearchComponent} from "../../search/search.component";
-import {Router} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   providers:[SearchComponent],
@@ -14,15 +14,15 @@ export class HeaderComponent implements OnInit {
 
   constructor(
     private search: SearchComponent,
+    private route: ActivatedRoute,
     private router: Router
+
   ) { }
 
   ngOnInit(): void {
   }
 
-  setSearchValue() {
-    this.router.navigate(['search']),
-    console.log(this.searchValue)
-    this.search.getMovies(this.searchValue);
+  onSearch() {
+    this.router.navigate(["search", this.searchValue])
   }
 }
