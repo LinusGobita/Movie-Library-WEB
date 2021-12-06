@@ -1,0 +1,384 @@
+{
+  "page":1,
+  "results":[
+    {
+      "adult":false,
+      "backdrop_path":null,
+      "genre_ids":[
+
+      ],
+      "id":892189,
+      "original_language":"en",
+      "original_title":"The Belts Show",
+      "overview":"The Belts Show is the vtuber debut of Belts by Cate Wurtz. Shut up. Give her money.",
+      "popularity":0.934,
+      "poster_path":"/cIf8jo3RszCPOpDIpLBEco6h9hO.jpg",
+      "release_date":"2021-10-30",
+      "title":"The Belts Show",
+      "video":false,
+      "vote_average":10,
+      "vote_count":1
+    },
+    {
+      "adult":false,
+      "backdrop_path":null,
+      "genre_ids":[
+        53,
+        18
+      ],
+      "id":889446,
+      "original_language":"en",
+      "original_title":"The Big Laugh",
+      "overview":"In 2021, Luke and Jackson were watching The Evil Dead in the second floor boys dorm lobby. Suddenly Zak showed up and the rest is history.",
+      "popularity":0.711,
+      "poster_path":"/nj68mwc9BkFPH1yPDyirC4NGjGw.jpg",
+      "release_date":"2021-10-21",
+      "title":"The Big Laugh",
+      "video":false,
+      "vote_average":10,
+      "vote_count":1
+    },
+    {
+      "adult":false,
+      "backdrop_path":"/tmbxhH60Ips0gZ5HTXKgPjqyZQA.jpg",
+      "genre_ids":[
+        18,
+        80
+      ],
+      "id":877905,
+      "original_language":"en",
+      "original_title":"My Struggle",
+      "overview":"From the bottoms, straight into the pantheon of legendary rappers. Boosie Badazz reminds us that the American Dream is alive and well. Through this autobiographic feature length film we explore the people, places, and portions of Boosie’s life most formative. Through the lens of the legendary creator himself. We peer through the veil, and into the heart of a man; unhinged, and unwavering in his pursuit of greatness.  Orson Wells, author of War of the Worlds, once described his masterpiece, Citizen Kane as an exploration of character rather than an exposition of conflict. This film follows the same philosophy. It’s not often you can say that Citizen Kane and Nirvana's \"Nevermind\" have anything in common, but through both works we feel closer to the creator.",
+      "popularity":2.321,
+      "poster_path":"/c6JiPjVffSqQvPbDCFbK0CJ5bi3.jpg",
+      "release_date":"2021-09-24",
+      "title":"My Struggle",
+      "video":false,
+      "vote_average":10,
+      "vote_count":4
+    },
+    {
+      "adult":false,
+      "backdrop_path":null,
+      "genre_ids":[
+        18,
+        14,
+        53,
+        27
+      ],
+      "id":844059,
+      "original_language":"en",
+      "original_title":"Haunted 5: Phantoms",
+      "overview":"A private investigator RETURNS to London. Andrew Robinson and his team investigate a London Pub that has Poltergeist activity. They encounter paranormal events, ghosts and phantoms who will make their investigation go all the way to hell.",
+      "popularity":1.4,
+      "poster_path":"/16kXIdVyqGBF0WViQlxm24faYUv.jpg",
+      "release_date":"2020-12-22",
+      "title":"Haunted 5: Phantoms",
+      "video":false,
+      "vote_average":10,
+      "vote_count":2
+    },
+    {
+      "adult":false,
+      "backdrop_path":null,
+      "genre_ids":[
+        27,
+        53,
+        9648
+      ],
+      "id":842343,
+      "original_language":"en",
+      "original_title":"Haunted 4: Demons",
+      "overview":"In a housing estate in London, a house is haunted by an evil ghost child. The team investigate the continuing haunting and poltergeist activity with amazing evidence and a chilling conclusion.",
+      "popularity":1.4,
+      "poster_path":"/amNYGwEuEjK615Y84WZZjs4YVT9.jpg",
+      "release_date":"2020-11-02",
+      "title":"Haunted 4: Demons",
+      "video":false,
+      "vote_average":10,
+      "vote_count":2
+    },
+    {
+      "adult":false,
+      "backdrop_path":null,
+      "genre_ids":[
+        10749
+      ],
+      "id":835502,
+      "original_language":"en",
+      "original_title":"\"And So, It Goes\"",
+      "overview":"After months of no communication between each other, a young woman reaches out to her past lover, in hopes of developing a friendship.",
+      "popularity":0.6,
+      "poster_path":"/yetezXjjkEh5LVleeRbTk1pkiTU.jpg",
+      "release_date":"2021-05-30",
+      "title":"\"And So, It Goes\"",
+      "video":false,
+      "vote_average":10,
+      "vote_count":1
+    },
+    {
+      "adult":false,
+      "backdrop_path":"/vQVOPbaM500ERZyokkbEkws3IGm.jpg",
+      "genre_ids":[
+        18,
+        27,
+        14
+      ],
+      "id":818878,
+      "original_language":"pt",
+      "original_title":"Vanitas",
+      "overview":"\"Vanity of vanities, everything is vanity\" says the bible. The word flows from the tongue naming the pleasure of earthly life and judging it as beautiful, but shallow and useless; vanity is a deadly sin. A female sin. The man painted the woman, put a mirror in his hands and called it vanity. The woman in representation admires herself, but the one who really admires her body is the artist. Whose vanity? In VANITAS, we re-divide the woman in our bodies, showing the depth of what is palpable. If the Father's temple hides after death, clean and perfect, we reject them. We welcome Mother Nature in us, life-death in a perpetual sacred cycle, also honoring her dark face. You may wish to reach heaven, but it is on earth that your knees fall.",
+      "popularity":0.6,
+      "poster_path":"/zmcKQKIIPj2bIQAiIOCS9sPxPMI.jpg",
+      "release_date":"2021-04-15",
+      "title":"Vanitas",
+      "video":false,
+      "vote_average":10,
+      "vote_count":1
+    },
+    {
+      "adult":false,
+      "backdrop_path":null,
+      "genre_ids":[
+
+      ],
+      "id":811432,
+      "original_language":"en",
+      "original_title":"ART V",
+      "overview":"A bizarre journey through a room",
+      "popularity":0.6,
+      "poster_path":"/jh3unEUrSd41WXHFNLhOlKg1RXW.jpg",
+      "release_date":"2021-03-25",
+      "title":"ART V",
+      "video":false,
+      "vote_average":10,
+      "vote_count":1
+    },
+    {
+      "adult":false,
+      "backdrop_path":"/k3bpGyLJUkAfSBzeEx7sKb7i0n2.jpg",
+      "genre_ids":[
+        35
+      ],
+      "id":811161,
+      "original_language":"en",
+      "original_title":"Law Fraud",
+      "overview":"A director of a low-budget movie set slowly loses his mind after a random guy claiming to be Jude Law walks onto set.",
+      "popularity":0.6,
+      "poster_path":"/3DIcD7bdo14TInqBgZpWtQHa7se.jpg",
+      "release_date":"2021-03-27",
+      "title":"Law Fraud",
+      "video":false,
+      "vote_average":10,
+      "vote_count":1
+    },
+    {
+      "adult":false,
+      "backdrop_path":null,
+      "genre_ids":[
+
+      ],
+      "id":809864,
+      "original_language":"en",
+      "original_title":"ART IV",
+      "overview":"The fourth film in the groundbreaking ART series",
+      "popularity":0.6,
+      "poster_path":"/jgF6r0PNvQfBXastVEg3tReWVeY.jpg",
+      "release_date":"2021-03-05",
+      "title":"ART IV",
+      "video":false,
+      "vote_average":10,
+      "vote_count":1
+    },
+    {
+      "adult":false,
+      "backdrop_path":null,
+      "genre_ids":[
+        37,
+        18,
+        28
+      ],
+      "id":809854,
+      "original_language":"en",
+      "original_title":"Poker Problems",
+      "overview":"Two men get into a fight",
+      "popularity":0.6,
+      "poster_path":"/jNRlVpB2VkI8JOkQLAXcL92ocOe.jpg",
+      "release_date":"2019-05-31",
+      "title":"Poker Problems",
+      "video":false,
+      "vote_average":10,
+      "vote_count":1
+    },
+    {
+      "adult":false,
+      "backdrop_path":"/17KYVwKOqlTiaYfTCntoBs0pZcp.jpg",
+      "genre_ids":[
+        12
+      ],
+      "id":787838,
+      "original_language":"en",
+      "original_title":"2019: A Cinematic Odyssey",
+      "overview":"2019: A Cinematic Odyssey is an eight hour musical celebration of film, including footage of over 245 feature-length movies.",
+      "popularity":0.6,
+      "poster_path":"/1L4kc52eYY65kQ8oLydSZwlLV0k.jpg",
+      "release_date":"2019-09-28",
+      "title":"2019: A Cinematic Odyssey",
+      "video":false,
+      "vote_average":10,
+      "vote_count":1
+    },
+    {
+      "adult":false,
+      "backdrop_path":null,
+      "genre_ids":[
+
+      ],
+      "id":787754,
+      "original_language":"en",
+      "original_title":"ART II.",
+      "overview":"A mysterious noise is heard and its horrifying source discovered.",
+      "popularity":0.6,
+      "poster_path":"/ytk4SM8PhaV9b3TJ3lx1gzBaP5F.jpg",
+      "release_date":"2021-01-19",
+      "title":"ART II.",
+      "video":false,
+      "vote_average":10,
+      "vote_count":1
+    },
+    {
+      "adult":false,
+      "backdrop_path":null,
+      "genre_ids":[
+        27
+      ],
+      "id":787748,
+      "original_language":"en",
+      "original_title":"ART: A Work of Art",
+      "overview":"A creature falls from a high place",
+      "popularity":0.6,
+      "poster_path":"/jZkR4bPzgDSqm9cYxRwFD5FelMB.jpg",
+      "release_date":"2020-07-28",
+      "title":"ART: A Work of Art",
+      "video":false,
+      "vote_average":10,
+      "vote_count":1
+    },
+    {
+      "adult":false,
+      "backdrop_path":"/nfcFoI5HX8ujunvBhC1lhct1weq.jpg",
+      "genre_ids":[
+        27,
+        80
+      ],
+      "id":783546,
+      "original_language":"en",
+      "original_title":"Hideout",
+      "overview":"Evading police at a remote farmhouse after fumbling a robbery, four criminals discover that the family living there is not who they appear to be.",
+      "popularity":10.479,
+      "poster_path":"/ckAui0w734hvNsHxfL9zZfpGefN.jpg",
+      "release_date":"2021-11-09",
+      "title":"Hideout",
+      "video":false,
+      "vote_average":10,
+      "vote_count":2
+    },
+    {
+      "adult":false,
+      "backdrop_path":"/sunWygA1FUOqTekHsvSZLeF0Uop.jpg",
+      "genre_ids":[
+        99,
+        35
+      ],
+      "id":782310,
+      "original_language":"en",
+      "original_title":"Mayor Pete",
+      "overview":"Pete Buttigieg, the Mayor of South Bend, Indiana runs for President of the United States. With extraordinary access to the candidate, his husband Chasten and member of the campaign team, the film follows Buttigieg from before he officially announced his candidacy, through the campaign and his victory in the Iowa Caucus and his appointment to the Biden Administration as the first LGBTQ Cabinet member in history.",
+      "popularity":6.857,
+      "poster_path":"/g0yBlB0zwqf8HVOeEFtzbuuKhlm.jpg",
+      "release_date":"2021-11-12",
+      "title":"Mayor Pete",
+      "video":false,
+      "vote_average":10,
+      "vote_count":1
+    },
+    {
+      "adult":false,
+      "backdrop_path":"/8GCNIeSx4jGmkvt0Oy99tSDIxbI.jpg",
+      "genre_ids":[
+        99
+      ],
+      "id":776596,
+      "original_language":"en",
+      "original_title":"Bring Your Own Brigade",
+      "overview":"An investigation into our landscape's hidden fire stories and on-the-ground experiences of firefighters and residents struggling through deadly fires.",
+      "popularity":4.873,
+      "poster_path":"/c5XsGMPMFSBrNZIIR936M33Don1.jpg",
+      "release_date":"2021-08-06",
+      "title":"Bring Your Own Brigade",
+      "video":false,
+      "vote_average":10,
+      "vote_count":1
+    },
+    {
+      "adult":false,
+      "backdrop_path":null,
+      "genre_ids":[
+        35,
+        28
+      ],
+      "id":773461,
+      "original_language":"en",
+      "original_title":"The Mysterious Disappearance of Awesome Jackson",
+      "overview":"When AWESOME JACKSON comes home from a trip overseas, he's quickly involved in an explosive accident. But is Jackson really dead? His husband, GAY BORAT, is determined to find out.  First wide-spread release from DDAM films.",
+      "popularity":0.6,
+      "poster_path":"/6YQWCJrUwqmytH3nEAoQP17I5To.jpg",
+      "release_date":"2020-09-04",
+      "title":"The Mysterious Disappearance of Awesome Jackson",
+      "video":false,
+      "vote_average":10,
+      "vote_count":1
+    },
+    {
+      "adult":false,
+      "backdrop_path":null,
+      "genre_ids":[
+        18,
+        53
+      ],
+      "id":767532,
+      "original_language":"en",
+      "original_title":"Scales",
+      "overview":"Scales is a tense, claustrophobic drama that spends one evening with four characters, who are trapped in a combustable boiling pot of an apartment.  American boxer, Darnell, his PR manager and girlfriend, Maria, troubled entrepreneur Adam and drug dealer Keith are forced to question their relationships and loyalties, as sinister secrets come to the fore, threatening dangerous consequences.  Unsettling and unexpected, this dark tale of lies and manipulation will lead audiences on a voyeuristic and ill-fated journey that, like the four characters, their sensibility may not want to be a part of, but their curiosity certainly will, begging the question: 'How do you weigh trust?'",
+      "popularity":1.4,
+      "poster_path":"/tcj4KCDKo20q6O9u2XgUG7qWuKa.jpg",
+      "release_date":"2020-11-27",
+      "title":"Scales",
+      "video":false,
+      "vote_average":10,
+      "vote_count":1
+    },
+    {
+      "adult":false,
+      "backdrop_path":null,
+      "genre_ids":[
+        27,
+        35,
+        28
+      ],
+      "id":764876,
+      "original_language":"en",
+      "original_title":"Fear Trumps All",
+      "overview":"Two years after the death of Mayor Phil D. Burn, The Donald returns to wreak havoc on the city of Clintown.",
+      "popularity":1.4,
+      "poster_path":"/aOA3qjsNHyL0FH77P8MUuN96Ym5.jpg",
+      "release_date":"2020-11-03",
+      "title":"Fear Trumps All",
+      "video":false,
+      "vote_average":10,
+      "vote_count":1
+    }
+  ],
+  "total_pages":500,
+  "total_results":10000
+}
