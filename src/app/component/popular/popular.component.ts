@@ -12,7 +12,7 @@ export class PopularComponent implements OnInit {
   movies: Array<Movie>=[];
 
   constructor(
-    private movieServices: MoviesService,
+    private movieServices: MoviesService
   ) { }
 
   ngOnInit(): void {

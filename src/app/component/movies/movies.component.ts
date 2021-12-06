@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {MoviesService} from "../../service/movies.service";
 import {Movie} from "../../model/Movie";
+import {FavouriteService} from "../../service/favourite.service";
 
 
 @Component({
@@ -10,7 +11,6 @@ import {Movie} from "../../model/Movie";
 })
 export class MoviesComponent implements OnInit {
 
-
   //undefined entfernen
   imgUrl: string = "";
   @Input() movies: Array<Movie> = [];
@@ -18,7 +18,8 @@ export class MoviesComponent implements OnInit {
 
 
   constructor(
-    private movieServices: MoviesService
+    private movieServices: MoviesService,
+    private favouriteService: FavouriteService
   ) {
   }
 
@@ -32,8 +33,9 @@ export class MoviesComponent implements OnInit {
   }
 
   // Diese Movies sollen in DBFavourite.json eingetragen werden
-  movieToFavorite(movie: Movie) {
-    console.log(movie.id)
+  addFavorite(movie: Movie) {
+    this.favouriteService.insertFavouriteMovie(movie);
+    console.log("addFavourite");
   }
 
 }
