@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Movie} from "../../model/Movie";
+import {FavouriteService} from "../../service/favourite.service";
 
 
 @Component({
@@ -9,19 +10,19 @@ import {Movie} from "../../model/Movie";
 })
 export class FavouriteComponent implements OnInit {
 
-  favouriteMovies: Array<Movie>=[];
+  movies: Array<Movie>=[];
 
-  constructor() { }
+  constructor(
+    private favouriteService: FavouriteService
+  ) { }
 
   ngOnInit(): void {
     this.getMovies()
   }
 
   getMovies() {
-    fetch("favourite/DBFavourite.json").then(res => res.json()).then(data =>{
-      this.favouriteMovies = data.results;
-      console.log("data.results = " + data.results)
-      console.log("favouriteMovies = " + this.favouriteMovies)
+    fetch(this.favouriteService.getFavouritesMovies()).then(res => res.json()).then(data =>{
+      this.movies = data;
     })
 
   }

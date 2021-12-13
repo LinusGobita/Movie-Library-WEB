@@ -67,7 +67,7 @@ export class MoviesService {
 
   //Datum Noch anpassen und CH hinzufügen
   getCinemaUrl():string {
-    //console.log("cinema works!")
+    console.log(`${this.baseUrl}/discover/movie?primary_release_date.gte=2021-08-15&primary_release_date.lte=2021-11-22&${this.apiKey}`)
     return `${this.baseUrl}/discover/movie?primary_release_date.gte=2021-08-15&primary_release_date.lte=2021-11-22&${this.apiKey}`;
   }
   getPopularUrl():string {
@@ -75,7 +75,7 @@ export class MoviesService {
     return `${this.baseUrl}/discover/movie/?certification_country=US&certification=R&sort_by=vote_average.desc&${this.apiKey}`;
   }
   getAllGenresUrl():string {
-    console.log("genre works! link = " + this.baseUrl + "genre/movie/list?" + this.apiKey)
+    //console.log("genre works! link = " + this.baseUrl + "genre/movie/list?" + this.apiKey)
     return `${this.baseUrl}/genre/movie/list?${this.apiKey}`
   }
 
@@ -85,7 +85,7 @@ export class MoviesService {
   }
 
   getSearchUrl(search: string):string{
-    console.log(`search works! = ${this.baseUrl}/search/movie?${this.apiKey}&query=${search}`)
+    //console.log(`search works! = ${this.baseUrl}/search/movie?${this.apiKey}&query=${search}`)
     return `${this.baseUrl}/search/movie?${this.apiKey}&query=${search}`
   }
 }
