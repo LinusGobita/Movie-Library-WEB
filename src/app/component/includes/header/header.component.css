@@ -27,3 +27,9 @@
 .search-bar::placeholder{
   color: black;
 }
+.search-btn {
+  background-color: transparent;
+  margin: 10px;
+  border-radius: 25px;
+  border: 2px solid var(--primary-color);
+}
