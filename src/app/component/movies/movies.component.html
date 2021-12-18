@@ -2,7 +2,8 @@
   <div class="movie" *ngFor="let movie of movies">
     <div style="margin: 8px; border-radius: 10px;">
       <div>
-        <button class="bi bi-star" (click)="addFavorite(movie)"></button>
+
+        <button type="button" (click)="addFavorite(movie)"><3</button>
         <span class="vote">{{movie.vote_average}}</span>
       </div>
       <img [src]="imgUrl + movie.poster_path" alt="" class="movie-img">

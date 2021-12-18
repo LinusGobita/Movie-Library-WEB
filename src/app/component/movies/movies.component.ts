@@ -11,10 +11,10 @@ import {FavouriteService} from "../../service/favourite.service";
 })
 export class MoviesComponent implements OnInit {
 
+
   //undefined entfernen
   imgUrl: string = "";
   @Input() movies: Array<Movie> = [];
-  private newMovie: Movie | undefined;
 
 
   constructor(
@@ -32,10 +32,13 @@ export class MoviesComponent implements OnInit {
     //console.log(this.imgUrl)
   }
 
-  // Diese Movies sollen in DBFavourite.json eingetragen werden
   addFavorite(movie: Movie) {
-    this.favouriteService.insertFavouriteMovie(movie);
-    console.log("addFavourite");
+    if (movie._id == null){
+      this.favouriteService.insertFavouriteMovie(movie);
+    } else {
+      this.favouriteService.deleteFavouriteMovie(movie._id);
+      setTimeout(function(){window.location.reload()}, 10);
+    }
   }
 
 }

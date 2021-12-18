@@ -33,7 +33,8 @@ import { FavouriteComponent } from './component/favourite/favourite.component';
         AppRoutingModule,
         NgbModule,
         HttpClientModule,
-        FormsModule
+        FormsModule,
+
     ],
   providers: [],
   bootstrap: [AppComponent]

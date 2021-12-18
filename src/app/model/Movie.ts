@@ -4,6 +4,7 @@ export interface Movie {
   backdrop_path: String;
   genre_ids: [];
   id: number;
+  _id: string;
   original_language: String;
   original_title: String;
   overview: String;

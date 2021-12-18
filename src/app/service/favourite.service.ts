@@ -20,12 +20,13 @@ export class FavouriteService {
 
   public insertFavouriteMovie(movie: Movie){
     console.log(this.baseUrl + '/movie', movie);
-    this.http.post(this.baseUrl + '/movie', movie)
+    this.http.post(this.baseUrl + '/movie', movie).subscribe()
   }
 
-  public deleteFavouritesMovies(){
-
+  public deleteFavouriteMovie(movieID: string){
+    const url = this.baseUrl + '/dmovie/' + movieID;
+    console.log(url)
+    this.http.delete(this.baseUrl + '/dmovie/' + movieID).subscribe()
   }
-
 
 }
