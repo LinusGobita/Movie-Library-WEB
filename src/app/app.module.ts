@@ -15,6 +15,7 @@ import { SearchComponent } from './component/search/search.component';
 import {FormsModule} from "@angular/forms";
 import { FavouriteComponent } from './component/favourite/favourite.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +35,6 @@ import { FavouriteComponent } from './component/favourite/favourite.component';
         NgbModule,
         HttpClientModule,
         FormsModule,
-
     ],
   providers: [],
   bootstrap: [AppComponent]

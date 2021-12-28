@@ -16,7 +16,6 @@ export class MoviesComponent implements OnInit {
   imgUrl: string = "";
   @Input() movies: Array<Movie> = [];
 
-
   constructor(
     private movieServices: MoviesService,
     private favouriteService: FavouriteService
