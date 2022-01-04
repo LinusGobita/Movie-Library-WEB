@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import {FormsModule} from "@angular/forms";
 import {FooterComponent} from "../includes/footer/footer.component";
 import {HeaderComponent} from "../includes/header/header.component";
+import {HttpClientTestingModule} from "@angular/common/http/testing";
 
 
 describe('AppComponent', () => {
@@ -11,6 +12,7 @@ describe('AppComponent', () => {
     await TestBed.configureTestingModule({
       imports: [
         RouterTestingModule,
+        HttpClientTestingModule,
         FormsModule
       ],
       declarations: [

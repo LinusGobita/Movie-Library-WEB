@@ -3,18 +3,16 @@
 
   <ul class="navbar-nav ml-auto listMenu">
     <li class="nav-item active">
-      <a class="nav-link" [routerLink]="['/home']" routerLinkActive="router-link-active">Swiss Cinema Movies
-        <span class="sr-only">(current)</span>
-      </a>
+      <a class="nav-link" [routerLink]="['/home']">Swiss Cinema Movies</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" [routerLink]="['/popular']" routerLinkActive="router-link-active">Popular</a>
+      <a class="nav-link" [routerLink]="['/popular']">Popular</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" [routerLink]="['/genres']" routerLinkActive="router-link-active">Genres</a>
+      <a class="nav-link" [routerLink]="['/genres']" >Genres</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" [routerLink]="['/favourite']" routerLinkActive="router-link-active">Favourite</a>
+      <a class="nav-link" [routerLink]="['/favourite']" >Favourite</a>
     </li>
     <li class="nav-item">
       <input type="text" placeholder="Search.." id="search" [(ngModel)]="searchValue" class="search-bar">

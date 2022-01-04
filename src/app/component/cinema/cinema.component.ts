@@ -10,22 +10,23 @@ import {Movie} from "../../model/Movie";
 })
 export class CinemaComponent implements OnInit {
 
-  movies: Array<Movie>=[];
+
+  categorie: string = "cinema";
+  movies: Array<Movie> = [];
 
   constructor(
     private movieServices: MoviesService
-  ) { }
+  ) {
+  }
 
   ngOnInit(): void {
     this.getMovies()
   }
 
   getMovies() {
-    fetch(this.movieServices.getCinemaUrl()).then(res => res.json()).then(data =>{
-      this.movies = data.results;
-      //console.log(this.movies)
-    })
-
+    this.movieServices.getCinemaMovies().subscribe((response) =>
+      this.movies = response.results);
+    //console.log("cinema movies"+this.movies);
   }
 
 }

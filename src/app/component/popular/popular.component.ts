@@ -9,6 +9,8 @@ import {Movie} from "../../model/Movie";
 })
 export class PopularComponent implements OnInit {
 
+
+  categorie: string = "popular";
   movies: Array<Movie>=[];
 
   constructor(
@@ -20,9 +22,10 @@ export class PopularComponent implements OnInit {
   }
 
   getMovies() {
-    fetch(this.movieServices.getPopularUrl()).then(res => res.json()).then(data =>{
-      this.movies = data.results;
-      console.log("get Popular Movies");
-    })
+    //null eventuell noch ausblenden
+    this.movieServices.getPopularMovies().subscribe((response) => this.movies = response.results);
+    //console.log("cinema movies"+this.movies);
   }
+
 }
+

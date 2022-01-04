@@ -10,6 +10,7 @@ import {ActivatedRoute, Router} from "@angular/router";
   styleUrls: ['./genre.component.css']
 })
 export class GenreComponent implements OnInit {
+  // Bei url änderung noch updaiten!!!
 
   genres: Array<Genre> = [];
   movies: Array<Movie> = [];
@@ -22,20 +23,20 @@ export class GenreComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router
   ) {
-    this.route.params.subscribe(params => this.doSearchSelectGenreMovies(params["genreId"]))
+    this.route.params.subscribe(params => this.getMovies(params["genreId"]))
   }
 
   ngOnInit(): void {
     this.getAllGenre()
-    this.doSearchSelectGenreMovies(28)
+    this.getMovies(28)
   }
-
 
   selectGenre(id: number, name: string){
     this.genreId = id;
     this.genreName = name
     this.router.navigate(["genres", this.genreId])
-    this.doSearchSelectGenreMovies(this.genreId);
+    this.getMovies(this.genreId)
+    //this.doSearchSelectGenreMovies(this.genreId);
   }
   getAllGenre() {
     fetch(this.movieServices.getAllGenresUrl()).then(res => res.json()).then(data => {
@@ -43,11 +44,11 @@ export class GenreComponent implements OnInit {
       console.log("get Genre Movies");
     })
   }
-
-  doSearchSelectGenreMovies(genreId: number) {
-    fetch(this.movieServices.getSearchGenresUrl(this.genreId)).then(res => res.json()).then(data => {
-      this.movies = data.results;
-      //console.log("searchGenre =" + data.results)
-    })
+  getMovies(genreId: number) {
+    //null eventuell noch ausblenden
+    console.log("get genre " + this.genreName)
+    this.movieServices.getGenreMovies(genreId).subscribe((response) => this.movies = response.results);
+    //console.log("cinema movies"+this.movies);
   }
+
 }

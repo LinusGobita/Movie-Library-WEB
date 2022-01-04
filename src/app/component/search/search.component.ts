@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Movie} from "../../model/Movie";
 import {MoviesService} from "../../service/movies.service";
-import {ActivatedRoute, Router} from "@angular/router";
+import {ActivatedRoute} from "@angular/router";
 
 
 @Component({
@@ -18,18 +18,14 @@ export class SearchComponent implements OnInit {
     private movieServices: MoviesService,
     private route: ActivatedRoute,
   ) {
-    this.route.params.subscribe(params => this.doSearch(params["searchValue"]))
+    this.route.params.subscribe(params => this.getMovies(params["searchValue"]))
   }
 
   ngOnInit(): void {
   }
 
-
-  doSearch(searchValue: string) {
-    fetch(this.movieServices.getSearchUrl(searchValue)).then(res => res.json()).then(data => {
-      this.movies = data.results;
-    })
+  getMovies(searchValue: string) {
+    this.movieServices.getSearchMovies(searchValue).subscribe((response) => this.movies = response.results);
+    //console.log("cinema movies"+this.movies);
   }
-
-
 }
