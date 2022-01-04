@@ -4,10 +4,11 @@ import { MoviesComponent } from './movies.component';
 import {HttpClientTestingModule} from "@angular/common/http/testing";
 import {CUSTOM_ELEMENTS_SCHEMA} from "@angular/core";
 
+
 describe('MoviesComponent', () => {
   let component: MoviesComponent;
   let fixture: ComponentFixture<MoviesComponent>;
-
+  console.log("Unit MoviesComponent Test start");
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],

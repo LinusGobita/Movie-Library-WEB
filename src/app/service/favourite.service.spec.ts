@@ -6,6 +6,7 @@ import {RouterTestingModule} from "@angular/router/testing";
 
 describe('FavouriteService', () => {
   let service: FavouriteService;
+  console.log("Unit FavouriteService Test start");
 
   beforeEach(() => {
     TestBed.configureTestingModule({

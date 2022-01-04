@@ -38,6 +38,7 @@ export class MoviesComponent implements OnInit {
       this.favouriteService.deleteFavouriteMovie(movie._id);
       setTimeout(function(){window.location.reload()}, 10);
     }
+    console.log("addFavourite");
   }
 
 }

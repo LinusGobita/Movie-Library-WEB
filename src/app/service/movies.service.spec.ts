@@ -4,6 +4,7 @@ import { MoviesService } from './movies.service';
 
 describe('MoviesService', () => {
   let service: MoviesService;
+  console.log("Unit MoviesService Test start");
 
   beforeEach(() => {
     TestBed.configureTestingModule({});

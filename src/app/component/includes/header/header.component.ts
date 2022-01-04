@@ -24,5 +24,6 @@ export class HeaderComponent implements OnInit {
 
   onSearch() {
     this.router.navigate(["search", this.searchValue])
+    console.log("prepair Url for search Movies");
   }
 }

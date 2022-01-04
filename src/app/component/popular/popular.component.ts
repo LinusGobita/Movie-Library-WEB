@@ -22,7 +22,7 @@ export class PopularComponent implements OnInit {
   getMovies() {
     fetch(this.movieServices.getPopularUrl()).then(res => res.json()).then(data =>{
       this.movies = data.results;
-      console.log("popular =" + data.results)
+      console.log("get Popular Movies");
     })
   }
 }

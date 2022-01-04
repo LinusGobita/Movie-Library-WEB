@@ -40,7 +40,7 @@ export class GenreComponent implements OnInit {
   getAllGenre() {
     fetch(this.movieServices.getAllGenresUrl()).then(res => res.json()).then(data => {
       this.genres = data.genres;
-      //console.log("genres =" + data.genres)
+      console.log("get Genre Movies");
     })
   }
 
