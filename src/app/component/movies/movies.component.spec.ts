@@ -27,4 +27,29 @@ describe('MoviesComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  /*
+  it("add favourite", ()=> {
+    const movieTest = {
+      adult: true,
+      backdrop_path: "test",
+      genre_ids: [1, 2, 3];
+      id: 123,
+      _id: 123,
+      original_language: "test",
+      original_title: "test",
+      overview: "test",
+      popularity: 123,
+      poster_path: "test",
+      release_date: "test",
+      title: "test",
+      video: true,
+      vote_average: 123,
+      vote_count: 123
+
+    }
+    component.addFavorite(movieTest);
+  })
+   */
+
 });

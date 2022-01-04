@@ -1,3 +1,9 @@
+export interface MovieResponse{
+  page:number;
+  results: Array<Movie>;
+}
+
+
 export interface Movie {
 
   adult: boolean;

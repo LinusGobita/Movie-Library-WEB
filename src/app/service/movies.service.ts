@@ -3,8 +3,6 @@ import {Movie, MovieResponse} from "../model/Movie";
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 
-
-
 @Injectable({
   providedIn: 'root'
 })
@@ -56,7 +54,7 @@ export class MoviesService {
     return this.getMovies(this.cinemaUrl);
   }
 
-  private getMovies(url:string): Observable<MovieResponse>{
+  getMovies(url:string):Observable<MovieResponse>{
     return this.httpClient.get<MovieResponse>(url);
   }
 

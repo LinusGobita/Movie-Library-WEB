@@ -34,8 +34,6 @@ describe('CinemaComponent', () => {
   it("Movies inside Movies Array", () => {
     component.getMovies();
     expect(component.movies).toHaveSize(0);
-  })
-
-
+  });
 
 });
