@@ -26,6 +26,5 @@ export class SearchComponent implements OnInit {
 
   getMovies(searchValue: string) {
     this.movieServices.getSearchMovies(searchValue).subscribe((response) => this.movies = response.results);
-    //console.log("cinema movies"+this.movies);
   }
 }
