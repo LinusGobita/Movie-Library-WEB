@@ -3,6 +3,10 @@ main{
   flex-wrap: wrap;
   justify-content: center;
 }
+.button-like{
+  background-color: var(--secondary-color) ;
+  border-color: var(--secondary-color);
+}
 
 .movie{
   width: 300px;
@@ -19,8 +23,6 @@ main{
 }
 .movie-img{
   width: 100%;
-  /*align-items: center;
-  margin: 8px;*/
   border-radius: 10px;
 }
 

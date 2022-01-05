@@ -10,8 +10,6 @@ import {Movie} from "../../model/Movie";
 })
 export class CinemaComponent implements OnInit {
 
-
-  categorie: string = "cinema";
   movies: Array<Movie> = [];
 
   constructor(
@@ -26,7 +24,6 @@ export class CinemaComponent implements OnInit {
   getMovies() {
     this.movieServices.getCinemaMovies().subscribe((response) =>
       this.movies = response.results);
-    //console.log("cinema movies"+this.movies);
   }
 
 }

@@ -1,0 +1,11 @@
+.img-backdrop {
+  width: 800px;
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.movie-title{
+  color: red;
+}

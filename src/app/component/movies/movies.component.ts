@@ -11,8 +11,6 @@ import {FavouriteService} from "../../service/favourite.service";
 })
 export class MoviesComponent implements OnInit {
 
-
-  //undefined entfernen
   imgUrl: string = "";
   @Input() movies: Array<Movie> = [];
 
@@ -24,11 +22,11 @@ export class MoviesComponent implements OnInit {
 
   ngOnInit(): void {
     this.getImageUrl()
+    console.log("Movie movies"+this.movies+this.imgUrl);
   }
 
   getImageUrl() {
     this.imgUrl = this.movieServices.getImgUrl();
-    //console.log(this.imgUrl)
   }
 
   addFavorite(movie: Movie) {

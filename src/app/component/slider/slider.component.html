@@ -3,36 +3,17 @@
   </div>
   <div class='col-12'>
     <ngb-carousel>
-      <ng-template ngbSlide>
-        <img src="https://image.tmdb.org/t/p/w500/o9FY8N5c8CXf22q8s4CmRRjAQJx.jpg" alt="picture 1">
-        <div class="carousel-caption">
-          <h3 style="color: yellow">picture 1</h3>
+
+      <ng-template ngbSlide *ngFor="let movie of movies">
+        <div class="flex">
+        <img [src]="imgUrl + movie.backdrop_path" alt="movie-backdrop" class="img-backdrop">
         </div>
-      </ng-template>
-      <ng-template ngbSlide>
-        <img src="https://image.tmdb.org/t/p/w500/8mO2ZTTOnLnaEQd1sNZAE2XBoOg.jpg" alt="picture 2">
         <div class="carousel-caption">
-          <h3 style="color: yellow">picture 2</h3>
+          <h3 class="movie-title">{{movie.title}}</h3>
         </div>
+
       </ng-template>
-      <ng-template ngbSlide>
-        <img src="https://image.tmdb.org/t/p/w500/o9FY8N5c8CXf22q8s4CmRRjAQJx.jpg" alt="picture 3">
-        <div class="carousel-caption">
-          <h3 style="color: yellow">picture 3</h3>
-        </div>
-      </ng-template>
-      <ng-template ngbSlide>
-        <img src="https://image.tmdb.org/t/p/w500/o9FY8N5c8CXf22q8s4CmRRjAQJx.jpg" alt="picture 4">
-        <div class="carousel-caption">
-          <h3 style="color: yellow">picture 4</h3>
-        </div>
-      </ng-template>
-      <ng-template ngbSlide>
-        <img src="https://image.tmdb.org/t/p/w500/o9FY8N5c8CXf22q8s4CmRRjAQJx.jpg" alt="picture 5">
-        <div class="carousel-caption">
-          <h3 style="color: yellow">picture 5</h3>
-        </div>
-      </ng-template>
+
     </ngb-carousel>
   </div>
 
