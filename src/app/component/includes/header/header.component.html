@@ -15,8 +15,7 @@
       <a class="nav-link" [routerLink]="['/favourite']" >Favourite</a>
     </li>
     <li class="nav-item">
-      <input type="text" placeholder="Search.." id="search" [(ngModel)]="searchValue" class="search-bar">
-      <button class="search-btn" (click)="onSearch()">search</button>
+      <input type="text" (keydown.enter)="onSearch()" placeholder="Search.." id="search" [(ngModel)]="searchValue" class="search-bar">
     </li>
   </ul>
 <!-- <span class="sidebar-nav-btn"  pButton icon="pi pi-plus" label="Show" (click)="leftSidebar = true"><img src="assets/images/menu.svg"></span>-->

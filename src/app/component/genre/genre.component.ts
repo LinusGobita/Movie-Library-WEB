@@ -15,8 +15,8 @@ export class GenreComponent implements OnInit {
   genres: Array<Genre> = [];
   movies: Array<Movie> = [];
   // Sollte auch dynamisch sein: also 1ste position aus json
-  genreId: number = 28;
-  genreName: string= "Action";
+
+  genreName: string= "Your Genres";
 
   constructor(
     private movieServices: MoviesService,
@@ -28,16 +28,13 @@ export class GenreComponent implements OnInit {
 
   ngOnInit(): void {
     this.getAllGenre()
-    this.getMovies(28)
   }
 
   selectGenre(id: number, name: string){
-    this.genreId = id;
     this.genreName = name
-    this.router.navigate(["genres", this.genreId])
-    this.getMovies(this.genreId)
-    //this.doSearchSelectGenreMovies(this.genreId);
+    this.router.navigate(["genres", id])
   }
+
   getAllGenre() {
     fetch(this.movieServices.getAllGenresUrl()).then(res => res.json()).then(data => {
       this.genres = data.genres;
@@ -45,10 +42,11 @@ export class GenreComponent implements OnInit {
     })
   }
   getMovies(genreId: number) {
-    //null eventuell noch ausblenden
-    console.log("get genre " + this.genreName)
+    //If the page is reloag show movies from id 28
+    if(genreId == undefined){
+      genreId = 28
+    }
     this.movieServices.getGenreMovies(genreId).subscribe((response) => this.movies = response.results);
-    //console.log("cinema movies"+this.movies);
   }
 
 }
