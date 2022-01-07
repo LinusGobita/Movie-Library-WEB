@@ -10,11 +10,9 @@ import {ActivatedRoute, Router} from "@angular/router";
   styleUrls: ['./genre.component.css']
 })
 export class GenreComponent implements OnInit {
-  // Bei url änderung noch updaiten!!!
 
   genres: Array<Genre> = [];
   movies: Array<Movie> = [];
-  // Sollte auch dynamisch sein: also 1ste position aus json
 
   genreName: string= "Your Genres";
 

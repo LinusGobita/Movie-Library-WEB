@@ -14,10 +14,5 @@ describe('FavouriteService', () => {
     });
     service = TestBed.inject(FavouriteService);
   });
-/*
-  it('should be created', () => {
-    expect(service).toBeTruthy();
-  });
- */
 
 });

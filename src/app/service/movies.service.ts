@@ -25,9 +25,6 @@ export class MoviesService {
   genreUrl2: string = `/movies?${this.apiKey}`;
 
   allGenreUrl: string = `${this.baseUrl}/genre/movie/list?${this.apiKey}`;
-  searchGenreUrl1: string = `${this.baseUrl}/genre/$`; //+id
-  searchGenreUrl2: string = `/movies?${this.apiKey}`;
-
   searchMovieURL: string = `${this.baseUrl}/search/movie?${this.apiKey}&query=` //+Search
 
   constructor(private httpClient: HttpClient){}

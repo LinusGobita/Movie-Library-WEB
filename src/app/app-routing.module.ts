@@ -9,7 +9,6 @@ import {FavouriteComponent} from "./component/favourite/favourite.component";
 
 const routes: Routes = [
   {
-    //Wieso funktioniert redirecTo nicht?
     path: '', /*redirectTo: 'home', pathMatch: 'full',*/
     component: CinemaComponent
   },
